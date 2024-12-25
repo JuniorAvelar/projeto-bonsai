@@ -57,7 +57,7 @@
 }
 
 .header-list li:hover {
-    color: #504f4f;
+    color: #303030;
 }
 
 .header-buttons {
@@ -115,3 +115,28 @@
     font-size: 2rem;
     display: none;
 }
+
+@media (max-width: 800px) {
+    .header-list {
+        display: none;
+    }
+
+    .header-buttons {
+        display: none;
+    }
+
+    #header-icon {
+        display: block;
+    }
+  }
+
+  @media (max-width: 1200px) {
+   
+    .header-buttons {
+        display: none;
+    }
+
+    #header-icon {
+        display: block;
+    }
+  }
