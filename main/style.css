@@ -277,9 +277,10 @@
     width: 80%;
 
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
-    margin: 4rem auto;
+    margin: 2rem auto;
+    gap: 3rem;
 }
 
 .no-benefits {
@@ -295,10 +296,33 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    /* background: #000; */
+}
+
+.no-benefits img, .with-benefits img {
+    width: 100%;
+    max-width: 450px;
 }
 
 .no-benefits h3, .with-benefits h3 {
     font-size: 1.2rem;
     color: #616060;
     margin-bottom: 2rem;
+}
+
+.no-benefits h3 {
+    padding-top: 3.4rem;
+}
+
+
+@media(max-width: 1200px){
+    .benefits-container {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .benefits-description {
+        font-size: 1.2rem;
+    }
 }
