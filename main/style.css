@@ -8,9 +8,9 @@
 
 /* header */
 .header {
-    /* position: fixed;
+    position: fixed;
     left: 0;
-    top: 0; */
+    top: 0;
 
     display: flex;
     justify-content: space-around;
@@ -21,6 +21,8 @@
     width: 100%;
     height: 60px;
     padding-block: 2.4rem;
+
+    z-index: 2;
 }
 
 .header-container {
@@ -147,11 +149,10 @@
 
   /* presentation section */
 
-  .apresentaton {
+  .presentation {
     display: flex;
-
     width: 80%;
-    margin: 4rem auto;
+    margin: 7rem auto;
   }
 
   .presentation-section {
@@ -167,7 +168,7 @@
     min-width: 500px; 
   }
 
-.apresentaton-title {
+.presentation-title {
     font-size: 3rem;
     padding-top: 2.6rem;
     margin-bottom: 2rem;
@@ -175,7 +176,7 @@
     color: #616060;
 }
 
-.apresentaton-description {
+.presentation-description {
     font-size: 1.3rem;
     color: #616060da;
     font-weight: bold;
@@ -185,10 +186,11 @@
     margin-bottom: 3rem
 }
 
-.apresentaton-input {
+.presentation-input {
     position: relative;
     height: 70px;
-    width:300px ;
+    width: 60%;
+    /* min-width:150px ; */
     padding: 20px;
 
     /* border-top-left-radius: 19px; */
@@ -200,7 +202,7 @@
     outline: none;
 }
 
-.apresentaton-input::placeholder {
+.presentation-input::placeholder {
     color: #61606085;
     font-weight: bolder;
 }
@@ -212,4 +214,38 @@
     position: absolute;
     height: 70px;
     padding-inline: 2rem;
+    max-width: 150px;;
+}
+
+@media(max-width:1200px) {
+    .presentation {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    } 
+    .presentation-section {
+        align-items: center;
+    }
+}
+
+@media(max-width:800px) {
+    .presentation {
+        align-items: center;
+        width: 90%;
+        /* background: #000; */
+    } 
+    .presentation-section {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .presentation-description {
+        margin-top: 2rem;
+        width: 600px;
+        
+    }
+
+    .presentation-input {
+        margin-left: 2rem;
+    }
 }
