@@ -28,7 +28,7 @@
     justify-content: space-between;
     align-items: center;
 
-    width: 70%;
+    width: 80%;
 }
 
 .header-title {
@@ -149,14 +149,11 @@
 
   .apresentaton {
     display: flex;
-    align-items: center;
-    gap: 3rem;
 
-    width: 70%;
-    margin: 0 auto;
-
-    background: #7d6969;
+    width: 80%;
+    margin: 4rem auto;
   }
+
   .presentation-section {
     flex: 1;
   }
@@ -166,5 +163,51 @@
   }
 
   .presentation-section-img img {
-    width: 200px;
+    width: 100%;
   }
+
+.apresentaton-title {
+    font-size: 3rem;
+    padding-top: 2.6rem;
+    margin-bottom: 2rem;
+
+    color: #616060;
+}
+
+.apresentaton-description {
+    font-size: 1.3rem;
+    color: #616060da;
+    font-weight: bold;
+
+    width: 540px;
+    margin-bottom: 3rem
+}
+
+.apresentaton-input {
+    position: relative;
+    height: 70px;
+    width:300px ;
+    padding: 20px;
+
+    /* border-top-left-radius: 19px; */
+
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: solid 2px #00b289;
+
+    outline: none;
+}
+
+.apresentaton-input::placeholder {
+    color: #61606085;
+    font-weight: bolder;
+}
+
+.presentation-button {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+
+    position: absolute;
+    height: 70px;
+    padding-inline: 2rem;
+}
