@@ -164,6 +164,7 @@
 
   .presentation-section-img img {
     width: 100%;
+    min-width: 500px; 
   }
 
 .apresentaton-title {
@@ -179,7 +180,8 @@
     color: #616060da;
     font-weight: bold;
 
-    width: 540px;
+    width: 80%;
+    max-width: 540px;
     margin-bottom: 3rem
 }
 
