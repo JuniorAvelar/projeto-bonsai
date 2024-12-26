@@ -165,7 +165,7 @@
 
   .presentation-section-img img {
     width: 100%;
-    min-width: 500px; 
+    min-width: 300px; 
   }
 
 .presentation-title {
@@ -190,7 +190,6 @@
     position: relative;
     height: 70px;
     width: 60%;
-    /* min-width:150px ; */
     padding: 20px;
 
     /* border-top-left-radius: 19px; */
@@ -234,6 +233,7 @@
         width: 90%;
         /* background: #000; */
     } 
+
     .presentation-section {
         align-items: center;
         justify-content: center;
@@ -250,10 +250,23 @@
     }
 }
 
+@media(max-width:600px) {
+    .presentation-title {
+        width: 90%;
+        font-size: 2rem;
+    }
+
+    .presentation-description {
+        font-size: 1.5rem;
+        width: 90%;
+    }
+}
+
 
 /* Benefit section */
 
 .header-benfits {
+    width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -325,4 +338,11 @@
     .benefits-description {
         font-size: 1.2rem;
     }
+}
+
+@media(max-width: 800px){
+    .header-benfits {
+        margin: 0 auto;
+    }
+
 }
