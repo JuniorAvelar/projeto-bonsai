@@ -353,7 +353,43 @@
 .services {
     width: 80%;
     display: flex;
+    margin: 10rem auto;
+}
+
+.services-list {
+    flex: 1;
+}
+
+.services-container {
+    flex: 1;
+}
+
+.services-list li{
+    display: flex;
     align-items: center;
-    justify-content: center;
-    margin: 0 auto;
+    gap: 16px;
+
+    color: #616060;
+    border-bottom: solid 1px #ddd;
+
+    width: 80%;
+
+    font-size: 1.4rem;
+    padding-block: 1.6rem;
+    padding-inline: 10px;
+    cursor: pointer;
+}
+
+#icon-active {
+    color: #00b289;
+}
+
+#hide {
+    color: #00b289;
+    align-self: center;
+    margin-left: auto;
+}
+
+body {
+    margin-bottom: 10rem;
 }
