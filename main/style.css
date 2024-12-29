@@ -408,19 +408,55 @@ main {
 
 .shape {
     position: absolute;
-
-    width: 700px;
-    height: 800px;
-    background-color: #fff5e8;
-    border-radius: 100px;
-    transform: rotate(50deg);
     left: 100px;
     top:0px;
     right: 100px;
     z-index: -1;
+
+    width: 700px;
+    height: 800px;
+    transform: rotate(30deg);
+
+    background-color: #fff5e8;
+    border-radius: 100px;
+}
+
+.services-title {
+    font-size: 2rem;
+    color: #616060;
+}
+
+.services-description {
+    font-size: 1.5rem;
+    color: #505050c6;
+    padding-block: 1rem;
+}
+
+.services-container a {
+    align-self: center;
+    text-decoration: none;
+    color: #00b289;
+    text-transform: uppercase;
+}
+
+.services-container a > i {
+    font-size: 1.1rem;
+    align-self: center;
+}
+
+.services-container a:hover i {
+    animation: move-side 0.5s ease-in forwards;
+}
+
+@keyframes move-side {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(5px);
+    }
 }
 
 body {
     margin-bottom: 10rem;
-    /* overflow: hidden;    */
 }
