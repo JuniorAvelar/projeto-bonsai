@@ -119,8 +119,53 @@
 #header-icon {
     font-size: 2rem;
     display: none;
-
     cursor: pointer;
+}
+
+.Product-el {
+    position: relative;
+}
+
+.header-modal-Product {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden; /* deixa o elemento invisivel*/
+
+    width: 300px;
+    height: 450px;
+    padding: 1.6rem;
+
+    background: #fff;
+    top: 150%;
+    left: -100%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease-in-out;
+
+}
+
+.line {
+    border-bottom: solid 1px #ddd;
+    border-top: solid 1px #ddd;
+
+}
+
+.product-item {
+    padding-block: 1rem;
+}
+
+.product-modal-title {
+    font-size: 1.4rem;
+    color: #616060;
+    padding-block: 1rem;
+}
+
+.product-item > p {
+    color: #505050c6;
+}
+
+.Product-el:hover .header-modal-Product {
+    opacity: 1;
+    visibility: visible;
 }
 
 @media (max-width: 800px) {
