@@ -119,6 +119,8 @@
 #header-icon {
     font-size: 2rem;
     display: none;
+
+    cursor: pointer;
 }
 
 @media (max-width: 800px) {
@@ -462,7 +464,12 @@ main {
         flex-direction: column;
         /* background: #000; */
     }
+
+    .services-title {
+        padding-top: 2rem ;
+    }
 }
+
 
 body {
     margin-bottom: 10rem;
