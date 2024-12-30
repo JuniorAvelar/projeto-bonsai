@@ -457,6 +457,13 @@ main {
     }
 }
 
+@media (max-width:1000px) {
+    .services {
+        flex-direction: column;
+        /* background: #000; */
+    }
+}
+
 body {
     margin-bottom: 10rem;
 }
