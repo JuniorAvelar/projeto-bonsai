@@ -122,7 +122,7 @@
     cursor: pointer;
 }
 
-.Product-el {
+.Product-el, .Templates-el {
     position: relative;
 }
 
@@ -142,6 +142,42 @@
     transition: all 0.4s ease-in-out;
 
 }
+
+.header-modal-Templates {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden; /* deixa o elemento invisivel*/
+
+    width: 300px;
+    height: 450px;
+    padding: 1rem;
+
+    background: #fff;
+    top: 150%;
+    left: -100%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease-in-out;
+}
+
+.Templates-el:hover .header-modal-Templates {
+    opacity: 1;
+    visibility: visible;
+}
+
+.header-modal-Templates  nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header-modal-Templates nav > a {
+    width: 100%;
+    text-decoration: none;
+    color: #616060;
+    padding-block: 1rem;
+    border-bottom: solid 1px #ddd;
+}
+
 
 .line {
     border-bottom: solid 1px #ddd;
