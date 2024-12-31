@@ -150,13 +150,21 @@
 
     width: 300px;
     height: 450px;
-    padding: 1rem;
 
     background: #fff;
     top: 150%;
     left: -100%;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     transition: all 0.4s ease-in-out;
+}
+
+.modal-Templates {
+    padding: 1rem;
+    border-bottom: solid 1px #ddd;
+}
+
+.modal-Templates:hover {
+    background: #dcdbdb;
 }
 
 .Templates-el:hover .header-modal-Templates {
@@ -170,12 +178,11 @@
     flex-direction: column;
 }
 
-.header-modal-Templates nav > a {
+.modal-Templates > a {
     width: 100%;
     text-decoration: none;
     color: #616060;
     padding-block: 1rem;
-    border-bottom: solid 1px #ddd;
 }
 
 
